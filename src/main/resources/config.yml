@@ -1,0 +1,26 @@
+messages:
+  info:
+    - "&4&l------XPLAY------"
+    - "&cFrom &rXSpigot"
+    - "&cVersion &r21w01a"
+    - "&c&lRelease Type &rSnapshot"
+    - "&cServer Type &rSpigot"
+    - "&cEdition &rFree"
+    - "&4&l------XPLAY------"
+  help:
+    - "&4&l------XHELP------"
+    - "&cXPLAY &rShows Information About The Plugin"
+    - "&cXPLAY HELP &rShows This Help Page"
+    - "&c&XPLAY RELOAD &rReloads The Plugin Config"
+    - "&c&lSETLOBBY &rSets The Lobby"
+    - "&4&l------XHELP------"
+  vault:
+    - "&4&l------VAULT------"
+    - "&cRunning Vault API Version 1.7"
+    - "&cFor Best Results Use Vault Version 1.7.3"
+    - "&4&l------VAULT------"
+  reload: "&4&lReloaded Config - XPlay"
+  noperms: "&4&lNo Permission - Error"
+  syntax-error: "&4&lSyntax Error - Check Arguments And Try Again"
+  console-restricted: "&4&lNo Permission - Error (This Command Can Only Be Executed By A Player)"
+  lobby-set: "&4&lSuccessfully Set The Lobby!"

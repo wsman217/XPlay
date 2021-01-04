@@ -1,0 +1,13 @@
+name: XPlay
+version: ${project.version}
+main: com.github.xspigot.xplay
+api-version: 1.16
+load: STARTUP
+authors: [XSpigot]
+description: The All-In-One Solution To Every Minecraft Server (Spigot)
+website: github.com/xspigot/xplay
+commands:
+  xplay:
+    description: "Main XPlay Command"
+  setlobby:
+    description: "Set The Server's Lobby"
