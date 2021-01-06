@@ -2,12 +2,17 @@ name: XPlay
 version: ${project.version}
 main: com.github.xspigot.xplay
 api-version: 1.16
-load: STARTUP
-authors: [XSpigot]
-description: The All-In-One Solution To Every Minecraft Server (Spigot)
-website: github.com/xspigot/xplay
+authors: [EpicGamer73]
+description: The All-In-One Minecraft Plugin
+depend: [Vault]
+website: https://xspigotmc.gitbook.io/
 commands:
   xplay:
-    description: "Main XPlay Command"
+    description: "Main XPlay Command {xplay.main}"
+    default: op
   setlobby:
-    description: "Set The Server's Lobby"
+    description: "Set Lobby {xplay.lobby}"
+    default: op
+  lobby:
+    description: "Teleport To Lobby {no permission}"
+    default: true

@@ -6,17 +6,17 @@
 
     <groupId>com.github.xspigot</groupId>
     <artifactId>xplay</artifactId>
-    <version>21w01a</version>
+    <version>Int21R1</version>
     <packaging>jar</packaging>
 
     <name>XPlay</name>
 
-    <description>The All-In-One Solution To Every Minecraft Server (Spigot)</description>
+    <description>The All-In-One Minecraft Plugin</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <url>github.com/xspigot/xplay</url>
+    <url>https://xspigotmc.gitbook.io/</url>
 
     <build>
         <plugins>
@@ -45,6 +45,27 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.1.1</version>
+                <configuration>
+                    <relocations>
+                        <relocation>
+                            <pattern>me.mattstudios.mfgui</pattern>
+                            <shadedPattern>com.github.xspigot.xplay.mfgui</shadedPattern>
+                        </relocation>
+                    </relocations>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
         <resources>
             <resource>
@@ -60,12 +81,12 @@
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
         <repository>
-            <id>sonatype</id>
-            <url>https://oss.sonatype.org/content/groups/public/</url>
-        </repository>
-        <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>sonatype</id>
+            <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
     </repositories>
 
@@ -75,6 +96,11 @@
             <artifactId>spigot-api</artifactId>
             <version>1.16.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>me.mattstudios.utils</groupId>
+            <artifactId>matt-framework-gui</artifactId>
+            <version>2.0.2</version>
         </dependency>
         <dependency>
             <groupId>com.github.MilkBowl</groupId>
