@@ -2,7 +2,7 @@
 The All-In-One Minecraft Plugin
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ATTENTION
-THIS PLUGIN IS VERY INCOMPLETE AND ONLY HAS ONE FEATURE CURRENTLY! I WOULD NOT RECOMMEND DOWNLOADING!
+THIS PLUGIN IS VERY INCOMPLETE AND ONLY HAS TWO FEATURES CURRENTLY! I WOULD NOT RECOMMEND DOWNLOADING!
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 What Is XPlay?
