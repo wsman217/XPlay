@@ -53,7 +53,7 @@
                     <relocations>
                         <relocation>
                             <pattern>me.mattstudios.mfgui</pattern>
-                            <shadedPattern>com.github.xspigot.xplay.mfgui</shadedPattern>
+                            <shadedPattern>com.github.xspigot.XPlay.mfgui</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>

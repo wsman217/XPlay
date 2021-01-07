@@ -1,6 +1,6 @@
-package com.github.xspigot.hub;
+package com.github.xspigot.commands;
 
-import com.github.xspigot.xplay;
+import com.github.xspigot.XPlay;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -9,8 +9,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
-public class cmd implements CommandExecutor {
-    FileConfiguration config = xplay.plugin.getConfig();
+public class CommandHub implements CommandExecutor {
+    FileConfiguration config = XPlay.plugin.getConfig();
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (label.equalsIgnoreCase("setlobby")) {
             if (sender.hasPermission("xplay.lobby")) {
